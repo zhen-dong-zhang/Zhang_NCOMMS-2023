@@ -2,41 +2,13 @@ clear all;
 clc;
 
 
-
-%input for loris1 sub...
-N  = 4;
-eo = 0;
-lon= -75;
-lat= 40;
-sc=  0;
-fax= 1;
-opt= 'GJI2011';
-
-%%anamoly
-wed1(1) = lon-1;
-wed1(2) = lat-20;
-wed1(3) = lon-1;
-wed1(4) = lat+20;
-wed1(5) = lon+1;
-wed1(6) = lat+20;
-wed1(7) = lon+1;
-wed1(8) = lat-20;
-
-addpath('/Users/zhendongzhang/Desktop/Glob_KAUST/plot_frederik')
-addpath('/Users/zhendongzhang/Desktop/Glob_KAUST/Geometry_plot')
-setenv('IFILES','/Users/zhendongzhang/Desktop/Glob_KAUST/plot_frederik/IFILES');
-
-%%%loat plates file from Frederik
-pathname=getenv('IFILES');
-fid=fopen(fullfile(pathname,'PLATES','plates.mtl'),'r','b');
+fid=fopen(fullfile('./plates','plates.mtl'),'r','b');
 plates=fread(fid,[1692 2 ],'uint16');
 plates(plates==0)=NaN;
 plates=plates/100-90;
 plon=plates(:,1);
 plat=plates(:,2);
-%plon(~(lon>=c11(1) & lon<=cmn(1)))=NaN;
-%plat(~(lat<=c11(2) & lat>=cmn(2)))=NaN;
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 
 
 
@@ -46,7 +18,7 @@ plat=plates(:,2);
 fpath  = './geom/';
 eqlist = importdata(strcat(fpath,'event_600'));
 % neq    = length(eqlist);
-neq  = 3;
+neq  = 3; %%%use 600 for true test... use a smaller number for quick test...
 % load('STATIONS.mat')
 
 icont=0;
