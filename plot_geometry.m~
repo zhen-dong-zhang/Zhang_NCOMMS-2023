@@ -142,16 +142,16 @@ end
 
 % fldl=log10(fld./ar);
 fldl = 100.0*fld./ar;
-surfm(latbin,lonbin,fldl, 'EdgeColor', 'none')
-%  surfm(latbin,lonbin,ar, 'EdgeColor', 'none')
+% surfm(latbin,lonbin,fldl, 'EdgeColor', 'none')
+ surfm(latbin,lonbin,ar, 'EdgeColor', 'none')
 
 %%%save data .mat 
 % save latbin.mat latbin
 % save lonbin.mat lonbin
 % save fldl.mat fldl
-% zlimits = [0 max(max(ar))];
+zlimits = [0 max(max(ar))];
 % zlimits = [0 0.2*max(max(fldl))];
-zlimits = [0 3];
+% zlimits = [0 3];
 
 demcmap(zlimits)
 colormap(flipud(hot))
