@@ -18,7 +18,7 @@ plat=plates(:,2);
 fpath  = './geom/';
 eqlist = importdata(strcat(fpath,'event_600'));
 % neq    = length(eqlist);
-neq  = 3; %%%use 600 for true test... use a smaller number for quick test...
+neq  = 600; %%%use 600 for true test... use a smaller number for quick test...
 % load('STATIONS.mat')
 
 icont=0;
@@ -127,6 +127,11 @@ lonbintp = yedgs(1:end-1) + diff(yedgs) / 2;
 
 fldl=log10(fld);
 surfm(latbin,lonbin,fldl, 'EdgeColor', 'none')
+
+%%%save data .mat 
+% save latbin.mat latbin
+% save lonbin.mat lonbin
+% save fldl.mat fldl
 
 zlimits = [0 max(max(fldl))];
 demcmap(zlimits)
