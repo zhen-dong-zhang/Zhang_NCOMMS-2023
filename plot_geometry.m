@@ -138,7 +138,7 @@ demcmap(zlimits)
 colormap(flipud(hot))
 hcb=colorbar('Location','southoutside');
 colorTitleHandle = get(hcb,'Title');
-set(colorTitleHandle ,'String','Log-scale midpoint density');
+set(colorTitleHandle ,'String','Log (midpoints in 1x1 degree bin)');
 
 hold on
 
@@ -149,7 +149,8 @@ hold on
 plotm(plat,plon,'c','Linewidth',2)
  hold off
 set(gca, 'fontsize',20)
-setm(gca, 'FontSize', 20,'FLineWidth',2,'Grid','on','MapProjection','robinson');
+setm(gca, 'FontSize', 20,'FLineWidth',2,'Grid','on','MapProjection','mollweid');%
+
 set(gcf, 'Position',  [100, 100, 1133, 700])
 
 
@@ -175,7 +176,7 @@ plotm(plat,plon,'c','Linewidth',2)
  end
  
 set(gca, 'fontsize',20)
-setm(gca, 'FontSize', 20,'FLineWidth',2,'Grid','on','MapProjection','robinson');
+setm(gca, 'FontSize', 20,'FLineWidth',2,'Grid','on','MapProjection','mollweid');
 %%%standalone legend
 
 
