@@ -1,0 +1,13 @@
+ PDE 2016 12  8 14 49 45.90  40.4500 -126.1900   8.4 6.6 6.6 OFF COAST OF NORTHERN CALIFORNIA
+event name:     201612081450A
+time shift:      6.9706
+half duration:   5.1000
+latitude:       40.4742
+longitude:    -126.4787
+depth:          17.0821
+Mrr:      -1.288588e+25
+Mtt:      -2.523046e+24
+Mpp:       1.540892e+25
+Mrt:       4.118035e+24
+Mrp:       2.761725e+25
+Mtp:      -1.094844e+26
