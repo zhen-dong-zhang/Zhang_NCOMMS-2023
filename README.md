@@ -1,9 +1,9 @@
 Reproducibility notes accompanying the paper
 
-*Seismic evidence for a 1000~km mantle discontinuity under the Pacific*
+*Seismic evidence for a 1000km mantle discontinuity under the Pacific*
 
-by Zhendong Zhang, Jessica C.E. Irving, Frederik J. Simons, and Tariq Alkhalifah
+by **Zhendong Zhang, Jessica C.E. Irving, Frederik J. Simons, and Tariq Alkhalifah***
 
-in revision for Nature Communications, February 2023.
+in revision for *Nature Communications*, February 2023.
 
 
