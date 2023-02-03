@@ -1,4 +1,5 @@
 function [dcol,vcol]=define_color(vmag)
+
 dcol{1}=[0.75, 0, 0.75];
 dcol{2}=[0.8500, 0.3250, 0.0980];
 dcol{3}=[0.75, 0.75, 0];
@@ -8,7 +9,6 @@ dcol{6}=[1, 0, 0];
 dcol{7}=[0, 0.5, 0];
 dcol{8}=[0.6350, 0.0780, 0.1840];
 dcol{9}=[0.25, 0.25, 0.25];
-
 
 for i=1:length(vmag)
     if(vmag(i) <=1)
@@ -30,6 +30,5 @@ for i=1:length(vmag)
     else
         vcol(i)=9;
     end
-        
 end
-end
+
