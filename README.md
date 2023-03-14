@@ -4,6 +4,6 @@ Reproducibility notes accompanying the paper
 
 by **Zhendong Zhang, Jessica C.E. Irving, Frederik J. Simons, and Tariq Alkhalifah***
 
-in revision for *Nature Communications*, February 2023.
+*Nature Communications*, http://doi.org/10.1038/s41467-023-37067-x
 
 
